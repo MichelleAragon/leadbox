@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-item:hover {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+.img-logo-leadbox {
+  width: 100px;
+  height: 28px;
+
+}
+
+.navbar {
+  color: #333333;
+  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+
+
+}
+
+
+.dropdown-menu {
+  font-family: 'Lato';
+  font-size: 12px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.dropdown-item {
+color: #333333;
+}
+
+.span-icon-search {
+  font-size: 18px;
+
+}
+
+.navbar-collapse {
+  display: flex;
+  flex-direction: row-reverse;
+
+  
+}
+
+.img-slider {
+  height: 673px;
+  object-fit: cover;
+}
+
+.img-featured-vehicles-card {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+}
+
+.title-featured-vehicles {
+  width: 100%;
+  font-family: 'Lato';
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
