@@ -1,6 +1,7 @@
 import React from 'react'
 import { HeroeCarousel } from './HeroeCarousel'
 import { SectionFeaturedVehicles } from './SectionFeaturedVehicles'
+import { SectionProin } from './SectionProin'
 
 export const Main = () => {
   return (
@@ -9,7 +10,7 @@ export const Main = () => {
 
         <SectionFeaturedVehicles/>
 
-
+        <SectionProin />
 
       <section>
         <div>

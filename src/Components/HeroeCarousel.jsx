@@ -1,34 +1,36 @@
-import React from 'react'
+import React from "react";
+import { Image, Carousel } from "react-bootstrap";
+
+const carouselData = [
+  {
+    src: "assets/img-slider-1.jpg",
+    title: "First slide label",
+    caption: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+  },
+  {
+    src: "assets/img-slider-1.jpg",
+    title: "Second slide label",
+    caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  },
+  {
+    src: "assets/img-slider-1.jpg",
+    title: "Third slide label",
+    caption: "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+  },
+];
 
 export const HeroeCarousel = () => {
   return (
-    <>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="assets/img-slider-1.jpg" class="d-block w-100 img-slider" alt="img-slider"/>
-            </div>
-            <div class="carousel-item">
-            <img src="assets/img-slider-1.jpg" class="d-block w-100 img-slider" alt="img-slider"/>
-            </div>
-            <div class="carousel-item">
-            <img src="assets/img-slider-1.jpg" class="d-block w-100 img-slider" alt="img-slider"/>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        </div>    
-    </>
-  )
-}
+    <Carousel className="sm-6">
+      {carouselData.map(({ src, title, caption }) => (
+        <Carousel.Item>
+          <Image className="w-100 img-slider" fluid src={src} />
+          <Carousel.Caption>
+            <h3>{title}</h3>
+            <p>{caption}</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  );
+};
