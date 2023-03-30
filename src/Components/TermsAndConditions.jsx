@@ -7,14 +7,18 @@ const links = [
 ];
 
 export const SiteMap = () => (
-  <div className="site-map-container">
-    {links.map(({ label }, index) => (
-      <>
-        <a>{label}</a>
-        <span>{index !== links.length - 1 ? " | " : ""}</span>
-      </>
-    ))}
+  <div className="d-flex justify-content-center mt-2">
+    <div className="site-map-container ">
+      {links.map(({ label }, index) => (
+        <>
+          <span>{label}</span>
+          <span>{index !== links.length - 1 ? " | " : ""}</span>
+        </>
+      ))}
 
-    <p>Dealership © 2022 | Powered by Leadbox</p>
+      <div className="d-flex justify-content-center mt-2">
+        <p>Dealership © 2022 | Powered by Leadbox</p>
+      </div>
+    </div>
   </div>
 );

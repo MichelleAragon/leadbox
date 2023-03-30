@@ -1,19 +1,6 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faTwitter,
-  faYoutube,
-  faInstagram,
-  faPinterest,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
-import { Dropdown } from "../components/Dropdown";
-import { Link } from "../components/Link";
 import { WorkingHoursSelector } from "../components/WorkingHoursSelector";
 import { Logo } from "../components/Logo";
-import { SocialMediaLinks } from "../components/SocialMediaLinks";
-import { SiteMap } from "../components/TermsAndConditions";
 import { ContactInfo } from "../components/ContactInfo";
 import { SiteLinks } from "../components/SiteLinks";
 
@@ -43,7 +30,7 @@ export const Footer = () => {
       <div class="row">
         <Logo className="col-sm-12 d-block d-md-none" color="white" />
         <ContactInfo className="col-md-4 col-sm-12" />
-        <SiteLinks className="col-md-4 col-sm-12  order-4" />
+        <SiteLinks className="col-md-4 col-sm-12  order-4 d-flex flex-column " />
         <WorkingHoursSelector className="col-md-4 col-sm-12 order-md-4 working-hours-container" />
       </div>
     </footer>

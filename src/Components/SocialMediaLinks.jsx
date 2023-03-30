@@ -19,5 +19,5 @@ const socialMediaData = [
 ];
 
 export const SocialMediaLinks = (props) => {
-  return <div {...props}> {socialMediaData.map((data) => <Link {...data}  className="btn-lg"/>)}</div>;
+  return <div {...props}> {socialMediaData.map((data) => <Link {...data}  className="btn-lg px-1"/>)}</div>;
 };

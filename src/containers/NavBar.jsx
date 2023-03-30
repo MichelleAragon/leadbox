@@ -5,11 +5,11 @@ import { Logo } from "../components/Logo";
 
 export const NavBar = () => {
   return (
-    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+    <nav class="navbar navbar-expand-md fixed-top bg-light">
       <div class="container-fluid">
         <Logo className="navbar-brand" />
         <button
-          class="navbar-toggler order-3"
+          class="navbar-toggler d-md-none order-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"

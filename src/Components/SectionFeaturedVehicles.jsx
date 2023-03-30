@@ -77,13 +77,15 @@ export const SectionFeaturedVehicles = () => {
                         {featuredVehiclesData.map(({ src, title, status }) => (
                           <div class="col-sm-12 col-md-6 col-lg-4 mb-3 div-container-example">
                             <div class="card div-card-example">
+                              <div class="card-header d-flex justify-content-start">
+                                <h4 class="card-title">{title}</h4>
+                              </div>
                               <img
                                 class="img-fluid img-card"
                                 alt="img-card"
                                 src={src}
                               />
-                              <div class="card-body-example">
-                                <h4 class="card-title-example">{title}</h4>
+                              <div class="card-body-example card">
                                 <p class="card-text-example">{status}</p>
                               </div>
                             </div>
