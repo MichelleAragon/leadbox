@@ -9,7 +9,7 @@ export const NavBar = () => {
       <div class="container-fluid">
         <Logo className="navbar-brand" />
         <button
-          class="navbar-toggler d-md-none order-3"
+          class="navbar-toggler d-md-none order-3 border border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -19,11 +19,11 @@ export const NavBar = () => {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-end px-3" id="navbarNavDropdown"> 
           <ul class="navbar-nav">
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown ">
               <a
-                class="nav-link dropdown-toggle dropdown-toggle-after "
+                class="nav-link dropdown-toggle dropdown-toggle-after  "
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -31,7 +31,7 @@ export const NavBar = () => {
               >
                 NEW
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu ps-3">
                 <li class="dropdown-item-hover">New Vehicle Inventory</li>
                 <li class="dropdown-item-hover">2023 Ford Lightning</li>
                 <li class="dropdown-item-hover">2023 Ford Bronco</li>
@@ -61,7 +61,7 @@ export const NavBar = () => {
           </ul>
         </div>
         <div className="ms-auto p-3">
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} sgit ize="xl" />
         </div>
       </div>
     </nav>

@@ -77,7 +77,7 @@ export const SectionFeaturedVehicles = () => {
                         {featuredVehiclesData.map(({ src, title, status }) => (
                           <div class="col-sm-12 col-md-6 col-lg-4 mb-3 div-container-example">
                             <div class="card div-card-example">
-                              <div class="card-header d-flex justify-content-start">
+                              <div class="card-header bg-transparent justify-content-start">
                                 <h4 class="card-title">{title}</h4>
                               </div>
                               <img
