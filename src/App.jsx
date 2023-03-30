@@ -1,11 +1,11 @@
-import { Header } from '../src/Components/Header';
-import { Main } from '../src/Components/Main';
-import { Footer } from '../src/Components/Footer';
+import { Main } from './containers/Main';
+import { Footer } from './containers/Footer';
+import { NavBar } from './containers/NavBar';
 
 function App() {
   return (
     <>
-      <Header/>
+      <NavBar/>
 
       <Main/>
 
