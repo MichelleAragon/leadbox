@@ -7,8 +7,8 @@ import { SiteLinks } from "../components/SiteLinks";
 export const Footer = () => {
 
   return (
-    <footer class="container-fluid p-4 text-white text-center text-lg-start footer-container">
-      <div class="row">
+    <footer className="container-fluid p-4 text-white text-center text-lg-start footer-container">
+      <div className="row">
         <Logo className="col-sm-12 d-block d-md-none" color="white" />
         <ContactInfo className="col-md-4 col-sm-12" />
         <SiteLinks className="col-md-4 col-sm-12  order-4 d-flex flex-column " />

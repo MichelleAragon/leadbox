@@ -7,31 +7,32 @@ const vehicleData = {
   src: "assets/img-featured-vehicles.jpeg",
   title: "2016 Tesla Model X P90D Ludicrous",
   status: "SOLD",
+  
 };
 
 const groups = {
   LG: [
-    [{ ...vehicleData }, { ...vehicleData }, { ...vehicleData }],
-    [{ ...vehicleData }, { ...vehicleData }, { ...vehicleData }],
-    [{ ...vehicleData }, { ...vehicleData }, { ...vehicleData }],
+    [{ ...vehicleData, id: 1 }, { ...vehicleData, id: 2 }, { ...vehicleData, id: 3 }],
+    [{ ...vehicleData, id: 4 }, { ...vehicleData, id: 5 }, { ...vehicleData, id: 6 }],
+    [{ ...vehicleData, id: 7 }, { ...vehicleData, id: 8 }, { ...vehicleData, id: 9 }],
   ],
   MD: [
-    [{ ...vehicleData }, { ...vehicleData }],
-    [{ ...vehicleData }, { ...vehicleData }],
-    [{ ...vehicleData }, { ...vehicleData }],
-    [{ ...vehicleData }, { ...vehicleData }],
-    [{ ...vehicleData }],
+    [{ ...vehicleData, id: 1 }, { ...vehicleData, id: 2 }],
+    [{ ...vehicleData, id: 3 }, { ...vehicleData, id: 4 }],
+    [{ ...vehicleData, id: 5 }, { ...vehicleData, id: 6 }],
+    [{ ...vehicleData, id: 7 }, { ...vehicleData, id: 8 }],
+    [{ ...vehicleData, id: 9 }],
   ],
   SM: [
-    [{ ...vehicleData }],
-    [{ ...vehicleData }],
-    [{ ...vehicleData }],
-    [{ ...vehicleData }],
-    [{ ...vehicleData }],
-    [{ ...vehicleData }],
-    [{ ...vehicleData }],
-    [{ ...vehicleData }],
-    [{ ...vehicleData }],
+    [{ ...vehicleData, id: 1 }],
+    [{ ...vehicleData, id: 2 }],
+    [{ ...vehicleData, id: 3 }],
+    [{ ...vehicleData, id: 4 }],
+    [{ ...vehicleData, id: 5 }],
+    [{ ...vehicleData, id: 6 }],
+    [{ ...vehicleData, id: 7 }],
+    [{ ...vehicleData, id: 8 }],
+    [{ ...vehicleData, id: 9 }],
   ],
 };
 const getSize = (size) => {
@@ -56,36 +57,36 @@ export const SectionFeaturedVehicles = () => {
   return (
     <section
       id="carouselExampleControls"
-      class="carousel slide"
+      className="carousel slide"
       data-bs-ride="carousel"
     >
-      <div class="container">
-        <div class="row">
-          <div class="col-12 div-carousel">
+      <div className="container">
+        <div className="row">
+          <div className="col-12 div-carousel">
             <div
               id="carouselExampleIndicators2"
-              class="carousel slide"
+              className="carousel slide"
               data-ride="carousel"
             >
-              <h2 class="title-featured-vehicles">FEATURED VEHICLES</h2>
-              <div class="carousel-inner">
+              <h2 className="title-featured-vehicles">FEATURED VEHICLES</h2>
+              <div className="carousel-inner">
                 {groups[deviceSize].map((featuredVehiclesData, index) => {
                   return (
-                    <div class={`carousel-item ${index === 0 ? "active" : ""}`}>
-                      <div class="row">
+                    <div key={featuredVehiclesData.id} className={`carousel-item ${index === 0 ? "active" : ""}`}>
+                      <div className="row">
                         {featuredVehiclesData.map(({ src, title, status }) => (
-                          <div class="col-sm-12 col-md-6 col-lg-4 mb-3 div-container-example">
-                            <div class="card div-card-example">
-                              <div class="card-header bg-transparent justify-content-start">
-                                <h4 class="card-title">{title}</h4>
+                          <div key={featuredVehiclesData.id} className="col-sm-12 col-md-6 col-lg-4 mb-3 div-container-example">
+                            <div className="card div-card-example">
+                              <div className="card-header bg-transparent justify-content-start">
+                                <h4 className="card-title">{title}</h4>
                               </div>
                               <img
-                                class="img-fluid img-card"
+                                className="img-fluid img-card"
                                 alt="img-card"
                                 src={src}
                               />
-                              <div class="card-body-example card">
-                                <p class="card-text-example">{status}</p>
+                              <div className="card-body-example card">
+                                <p className="card-text-example">{status}</p>
                               </div>
                             </div>
                           </div>

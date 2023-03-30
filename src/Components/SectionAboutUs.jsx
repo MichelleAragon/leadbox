@@ -19,7 +19,7 @@ export const SectionAboutUs = () => {
             vel quam nec metus pellentesque iaculis. Cras lobortis odio a nulla
             condimentum blandit. Donec laoreet euismod diam, in lobortis odio
             tincidunt in.
-            <p />
+            </p>
             <p>
               Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
               posuere cubilia curae; Vivamus eleifend, metus ut rutrum
@@ -27,7 +27,6 @@ export const SectionAboutUs = () => {
               at elit. Morbi iaculis metus et vestibulum commodo. Etiam lectus
               augue, congue vitae vestibulum sit amet, mattis finibus nulla.
             </p>
-          </p>
         </article>
       </div>
     </div>
