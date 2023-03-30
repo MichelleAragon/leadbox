@@ -47,7 +47,6 @@ export const SectionFeaturedVehicles = () => {
   const [deviceSize, setDeviceSize] = useState(getSize(window.innerWidth));
 
   const handleResize = () => {
-    console.log(true)
     setDeviceSize(getSize(window.innerWidth))
   };
 

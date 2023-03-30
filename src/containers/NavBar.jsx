@@ -9,7 +9,7 @@ export const NavBar = () => {
       <div class="container-fluid">
         <Logo className="navbar-brand" />
         <button
-          class="navbar-toggler"
+          class="navbar-toggler order-3"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -60,7 +60,9 @@ export const NavBar = () => {
             </li>
           </ul>
         </div>
-        <FontAwesomeIcon icon={faMagnifyingGlass} />
+        <div className="ms-auto p-3">
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+        </div>
       </div>
     </nav>
   );
