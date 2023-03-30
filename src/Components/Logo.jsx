@@ -5,7 +5,10 @@ export const Logo = ({ color, ...props }) => {
     <div {...props}>
       <img
         className="img-logo-leadbox "
-        src={`assets/img-logo-leadbox-removebg-preview${color === "white" ? "-" + color : ""}.png`}
+        alt="logo"
+        src={`assets/img-logo-leadbox-removebg-preview${
+          color === "white" ? "-" + color : ""
+        }.png`}
       />
     </div>
   );

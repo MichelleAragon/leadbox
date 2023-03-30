@@ -19,16 +19,16 @@ export const Dropdown = ({ options, defaultOption, onSelectOption }) => {
   ));
 
   return (
-      <div class="dropdown">
-        <button
-          class="btn btn-sm mb-3 bg-white text-dark dropdown-toggle dropdown-footer d-flex w-100 "
-          type="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          {selectedOption.label}
-        </button>
-        <ul class="dropdown-menu dropdown-menu-options w-100">{renderOptions}</ul>
-      </div>
+    <div class="dropdown">
+      <button
+        class="btn btn-sm mb-3 bg-white text-dark dropdown-toggle dropdown-footer d-flex w-100 "
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        {selectedOption.label}
+      </button>
+      <ul class="dropdown-menu dropdown-menu-options w-100">{renderOptions}</ul>
+    </div>
   );
 };

@@ -1,29 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { WorkingHoursSelector } from "../components/WorkingHoursSelector";
 import { Logo } from "../components/Logo";
 import { ContactInfo } from "../components/ContactInfo";
 import { SiteLinks } from "../components/SiteLinks";
 
-const works = [
-  { label: "SALES", value: 1 },
-  { label: "SERVICE", value: 2 },
-  { label: "PARTS", value: 3 },
-];
-
-const WorkingHours = ({ work }) => {
-  if (work.value === works[1].value) {
-    return <div>Render Service working hours</div>;
-  }
-
-  if (work.value === works[2].value) {
-    return <div> Render Parts working hours</div>;
-  }
-
-  return <div> Render Sales working hours</div>;
-};
-
 export const Footer = () => {
-  const [typeOfWork, setTypeOfWork] = useState(works[0]);
 
   return (
     <footer class="container-fluid p-4 text-white text-center text-lg-start footer-container">

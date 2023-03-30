@@ -19,18 +19,20 @@ export const NavBar = () => {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end px-3" id="navbarNavDropdown"> 
+        <div
+          class="collapse navbar-collapse justify-content-end px-3"
+          id="navbarNavDropdown"
+        >
           <ul class="navbar-nav">
             <li class="nav-item dropdown ">
-              <a
-                class="nav-link dropdown-toggle dropdown-toggle-after  "
-                href="#"
+              <bottom
+                class="nav-link dropdown-toggle dropdown-toggle-after"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 NEW
-              </a>
+              </bottom>
               <ul class="dropdown-menu ps-3">
                 <li class="dropdown-item-hover">New Vehicle Inventory</li>
                 <li class="dropdown-item-hover">2023 Ford Lightning</li>
@@ -39,24 +41,24 @@ export const NavBar = () => {
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">
+              <bottom class="nav-link" aria-current="page">
                 USED
-              </a>
+              </bottom>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <bottom class="nav-link">
                 SERVICE
-              </a>
+              </bottom>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <bottom class="nav-link">
                 PARTS
-              </a>
+              </bottom>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <bottom class="nav-link">
                 ABOUT
-              </a>
+              </bottom>
             </li>
           </ul>
         </div>

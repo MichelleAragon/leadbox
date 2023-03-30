@@ -35,21 +35,20 @@ const groups = {
   ],
 };
 const getSize = (size) => {
-    if (size <= 767) {
-      return DeviceType.MOBILE;
-    } else if (size >= 768 && size <= 1023) {
-      return DeviceType.TABLET;
-    } else {
-      return DeviceType.DESKTOP;
-    }
-}
+  if (size <= 767) {
+    return DeviceType.MOBILE;
+  } else if (size >= 768 && size <= 1023) {
+    return DeviceType.TABLET;
+  } else {
+    return DeviceType.DESKTOP;
+  }
+};
 export const SectionFeaturedVehicles = () => {
   const [deviceSize, setDeviceSize] = useState(getSize(window.innerWidth));
 
   const handleResize = () => {
-    setDeviceSize(getSize(window.innerWidth))
+    setDeviceSize(getSize(window.innerWidth));
   };
-
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);

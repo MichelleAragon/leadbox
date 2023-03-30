@@ -24,17 +24,16 @@ const itemData = [
 export const SectionCarsFeatures = () => {
   return (
     <div class="container div-card-container">
-        <div className="row justify-content-center">
-          {itemData.map(({ src, title, caption }) => (
-            <div class="card border-0 col-lg-4 col-md-6 col-sm-12 p-3">
-              <img src={src} class="card-img-top h-100" alt={src} />
-              <div class="card-body">
-                <h5 class="card-title">{title}</h5>
-                <p class="card-text">{caption}</p>
-              </div>
+      <div className="row justify-content-center">
+        {itemData.map(({ src, title, caption }) => (
+          <div class="card border-0 col-lg-4 col-md-6 col-sm-12 p-3">
+            <img src={src} class="card-img-top h-100" alt={src} />
+            <div class="card-body">
+              <h5 class="card-title">{title}</h5>
+              <p class="card-text">{caption}</p>
             </div>
-          ))}
-
+          </div>
+        ))}
       </div>
     </div>
   );
