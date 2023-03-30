@@ -165,3 +165,17 @@ section.carousel {
     justify-content:  space-between;
 }
 
+.dropdown-menu-options {
+  background-color: #828282;
+  Font-style: bold;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+}
+
+.dropdown-menu-options:hover {
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: none;
+}
