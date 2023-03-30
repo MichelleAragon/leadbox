@@ -61,7 +61,7 @@ export const NavBar = () => {
           </ul>
         </div>
         <div className="ms-auto p-3">
-          <FontAwesomeIcon icon={faMagnifyingGlass} sgit ize="xl" />
+          <FontAwesomeIcon icon={faMagnifyingGlass} size="xl" />
         </div>
       </div>
     </nav>
