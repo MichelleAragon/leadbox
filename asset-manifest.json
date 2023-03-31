@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/leadbox/static/css/main.a35601e2.css",
+    "main.js": "/leadbox/static/js/main.4e873639.js",
+    "static/media/img-aboutus-1.png": "/leadbox/static/media/img-aboutus-1.6821ba1f7ddced10da0a.png",
+    "static/media/img-aboutus-right-1.png": "/leadbox/static/media/img-aboutus-right-1.58e2fde371a7a96bd24d.png",
+    "index.html": "/leadbox/index.html",
+    "main.a35601e2.css.map": "/leadbox/static/css/main.a35601e2.css.map",
+    "main.4e873639.js.map": "/leadbox/static/js/main.4e873639.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a35601e2.css",
+    "static/js/main.4e873639.js"
+  ]
+}
